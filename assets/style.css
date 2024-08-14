@@ -195,89 +195,112 @@ button {
         flex-direction: column;
         align-items: center;
         height: auto;
-        width: 90%;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .logo_imagen {
+        position: fixed;
+        top: 0px; 
+        left: 0px; 
+        width: 40px; 
+        margin: 10px; 
+        height: auto;
     }
 
     .contenedor_contenido {
         width: 100%;
-        margin-bottom: 20px;
+        
+        padding: 10px;
+        text-align: center;
+    }
+
+    .contenido_input {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .input_mensaje {
+        font-size: 1.2rem;
+        padding: 15px;
+        width: calc(100% - 40px);
+    }
+
+    .contenido_botones {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    button {
+        width: 100%;
+        font-size: 1rem;
+        padding: 15px;
     }
 
     .contenido_resultado {
         width: 100%;
+        margin-top: 20px;
     }
 
-    .logo_imagen{
-        width: 30px;
-        top: 5px;
-        left: 5px;
-    }
-    .contenido_botones{
-        margin-top: 10px;
+    .contenido_resultado_alerta, .contenido_resultado_alerta2 {
+        font-size: 1rem;
     }
 
-    
+    #contenido_boton_copiar {
+        width: 100%;
+        margin-top: 20px;
+    }
+    .contenido_resultado_imagen{
+        display: none;
+
+    }
 }
 
 @media (max-width: 768px) {
+    .logo_imagen {
+        width: 25px;
+    }
+
     .input_mensaje {
-        font-size: 1.2rem;
-        padding: 15px;
-        margin-bottom: 20px;
+        font-size: 1rem;
+        padding: 10px;
     }
 
     button {
-        padding: 10px 20px;
+        padding: 10px 15px;
         font-size: 0.9rem;
     }
 
-    .contenido_resultado_imagen {
-        display: none;
-    }
-
-    .logo_imagen{
-        width: 30px;
-        top: 5px;
-        left: 5px;
-    }
-    .contenedor_contenido, .contenido_resultado{
-        margin-top: 60px;
-    }
-    .contenido_botones{
-        margin-top: 10px;
+    .contenido_resultado_alerta, .contenido_resultado_alerta2 {
+        font-size: 0.9rem;
     }
 }
 
-
-
 @media (max-width: 480px) {
+    body {
+        height: auto;
+        padding: 10px;
+        overflow: auto;
+    }
+
     .contenedor {
         width: 100%;
         padding: 10px;
     }
 
     .input_mensaje {
-        font-size: 1rem;
+        font-size: 0.9rem;
         padding: 10px;
-        margin-bottom: 20px;
+        margin-bottom: 100px;
     }
 
     button {
-        padding: 8px 15px;
+        padding: 8px 12px;
         font-size: 0.8rem;
     }
 
-    .contenido_resultado {
-        padding: 10px;
-    }
-
     .contenido_resultado_alerta, .contenido_resultado_alerta2 {
-        font-size: 0.9rem;
-    }
-
-    .logo_imagen{
-        width: 25px;
-        top: 3px;
-        left: 3px;
+        font-size: 0.8rem;
     }
 }
